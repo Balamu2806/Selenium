@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Leads" thread-count="1"  verbose="5">
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"></parameter>
+  <parameter name="userName" value="Demosalesmanger"></parameter>	
+  <parameter name="pwd" value="crmsfa"></parameter>
+  <test name="ChromeBrowserTesting" >	
+	<parameter name="browserName" value="Chrome"></parameter>	  
+    <classes>
+       <class name="week5.day1.testcase.CreateLead"/>
+    </classes>
+  </test> <!-- ChromeBrowserTesting -->
+  
+  <test name="EdgeBrowserTesting" >	
+	  	<parameter name="browserName" value="Edge"></parameter>	  
+    <classes>
+       <class name="week5.day1.testcase.CreateLead"/>
+    </classes>
+  </test> <!-- EdgeBrowserTesting -->
+  
+  <test name="FireFoxBrowserTesting">	
+	<parameter name="browserName" value="FireFox"></parameter>	  
+    <classes>
+       <class name="week5.day1.testcase.CreateLead"/>
+    </classes>
+  </test> <!-- FireFoxBrowserTesting -->
+  
+  <test name="IEBrowserTesting">	
+	<parameter name="browserName" value="IE"></parameter>	  
+    <classes>
+       <class name="week5.day1.testcase.CreateLead"/>
+    </classes>
+  </test> <!-- IEBrowserTesting -->
+ </suite> <!-- Leads -->
